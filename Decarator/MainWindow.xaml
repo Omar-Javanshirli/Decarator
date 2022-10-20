@@ -1,0 +1,28 @@
+﻿<Window x:Class="Decarator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Decarator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Margin="100">
+            <GroupBox Width="150" Height="80" Canvas.Left="120" Canvas.Top="37" x:Name="groupBox">
+                <Canvas Height="80" x:Name="canvas">
+                    <TextBlock Width="100" Height="15" Text="SMS Service"/>
+                    <TextBlock Width="100" Height="15" Text="Facebook Service" Canvas.Top="20"/>
+                    <TextBlock Width="100" Height="15" Text="Instagram Service" Canvas.Top="40"/>
+                    <TextBlock Width="100" Height="15" Text="Twitter Service" Canvas.Top="60"/>
+                    <CheckBox Canvas.Right="10" Name="smsCh"/>
+                    <CheckBox Canvas.Right="10" Canvas.Top="20" Name="facebookCh"/>
+                    <CheckBox Canvas.Right="10" Canvas.Top="40" Name="instagramCh"/>
+                    <CheckBox Canvas.Right="10" Canvas.Top="60" Name="twitterCh"/>
+                </Canvas>
+            </GroupBox>
+            <TextBox Width="200" Canvas.Left="290" Canvas.Top="40"/>
+            <Button Width="100" Height="20" Background="Orange" Content="Send" Canvas.Left="290" Canvas.Top="210" Click="Button_Click"/>
+            <TextBlock Width="200" Height="100" Canvas.Left="290" Canvas.Top="100" x:Name="listBox" TextWrapping="Wrap"/>
+        </Canvas>
+    </Grid>
+</Window>
