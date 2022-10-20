@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Canvas Margin="100">
-            <GroupBox Width="150" Height="80" Canvas.Left="120" Canvas.Top="37" x:Name="groupBox">
+            <GroupBox Width="150" Height="80" Canvas.Left="120" Canvas.Top="100" x:Name="groupBox">
                 <Canvas Height="80" x:Name="canvas">
                     <TextBlock Width="100" Height="15" Text="SMS Service"/>
                     <TextBlock Width="100" Height="15" Text="Facebook Service" Canvas.Top="20"/>
@@ -20,9 +20,9 @@
                     <CheckBox Canvas.Right="10" Canvas.Top="60" Name="twitterCh"/>
                 </Canvas>
             </GroupBox>
-            <TextBox Width="200" Canvas.Left="290" Canvas.Top="40"/>
+            
             <Button Width="100" Height="20" Background="Orange" Content="Send" Canvas.Left="290" Canvas.Top="210" Click="Button_Click"/>
-            <TextBlock Width="200" Height="100" Canvas.Left="290" Canvas.Top="100" x:Name="listBox" TextWrapping="Wrap"/>
+            <TextBlock Width="200" Height="100" Canvas.Left="290" Canvas.Top="100" x:Name="listBox" TextWrapping="Wrap" Background="Pink"/>
         </Canvas>
     </Grid>
 </Window>
